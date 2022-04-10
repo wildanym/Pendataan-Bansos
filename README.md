@@ -1,4 +1,4 @@
-# vue-tailwindcss
+# Project 3 Pendataan Bansos (Frontend JS Project)
 
 ## Project setup
 ```
