@@ -25,6 +25,7 @@
 								type="text"
 								class="input-style"
 								placeholder="Nama lengkap"
+								autocomplete="off"
 								name="nama"
 								id="nama"
 								v-model="formValues.nama"
@@ -39,6 +40,7 @@
 									name="nik"
 									id="nik"
 									placeholder="16 Digit NIK"
+									autocomplete="off"
 									oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
 									maxlength="16"
 									type="number"
@@ -62,6 +64,7 @@
 									name="nkk"
 									id="nkk"
 									placeholder="16 Digit No Kartu Keluarga"
+									autocomplete="off"
 									oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
 									maxlength="16"
 									type="number"
@@ -83,6 +86,7 @@
 								name="umur"
 								id="umur"
 								placeholder="Umur minimal 25 tahun"
+								autocomplete="off"
 								v-model="formValues.umur"
 							/>
 							<ErrorMessage name="umur" class="text-red-500 text-sm" />
@@ -129,6 +133,7 @@
 									maxlength="255"
 									id="alamat"
 									placeholder="Alamat sesuai KTP"
+									autocomplete="off"
 									v-model="formValues.alamat"
 								/>
 								<span class="text-xs text-gray-400 absolute -bottom-5 right-1"
@@ -266,6 +271,7 @@
 							name="pSebelum"
 							id="psebelum"
 							placeholder="Contoh : 2000000"
+							autocomplete="off"
 							v-model="formValues.pSebelum"
 						/>
 						<ErrorMessage name="pSebelum" class="text-red-500 text-sm" />
@@ -280,6 +286,7 @@
 							name="pSesudah"
 							id="psesudah"
 							placeholder="Contoh : 2000000"
+							autocomplete="off"
 							v-model="formValues.pSesudah"
 						/>
 						<ErrorMessage name="pSesudah" class="text-red-500 text-sm" />
@@ -357,6 +364,7 @@
 									name="alasanlainnya"
 									id="inputlainnya"
 									placeholder="Tuliskan alasan ..."
+									autocomplete="off"
 									:disabled="inputAlasan"
 									v-model="formValues.alasanlainnya"
 									class="input-style w-full ml-2"
