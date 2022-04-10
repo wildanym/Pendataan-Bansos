@@ -3,7 +3,7 @@
 ## Info
 ```
 Nama        : Wildan Yuris Muhammad
-kelas       : VeuJs
+kelas       : VueJs
 Video Demo  :
 Link Deploy :
 ```
