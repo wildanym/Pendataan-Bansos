@@ -16,7 +16,11 @@
 			</p>
 		</div>
 		<div class="flex gap-4 mb-3">
-			<button class="btn btn-send" @click="$emit('send')" :disabled="loading">
+			<button
+				class="btn h-12 pb-4 btn-send"
+				@click="$emit('send')"
+				:disabled="loading"
+			>
 				<div
 					v-if="loading == true"
 					style="border-top-color: transparent"

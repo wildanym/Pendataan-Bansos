@@ -155,6 +155,7 @@
 									<Field
 										type="number"
 										class="input-style"
+										autocomplete="off"
 										name="rt"
 										id="rt"
 										v-model="formValues.rt"
@@ -170,6 +171,7 @@
 									<Field
 										type="number"
 										class="input-style"
+										autocomplete="off"
 										name="rw"
 										id="rw"
 										v-model="formValues.rw"
@@ -422,7 +424,7 @@
 
 				<button
 					v-if="currentStep === 2 && errorPage == false"
-					class="btn btn-send absolute"
+					class="btn btn-send absolute h-12 pb-4"
 					type="submit"
 					:disabled="loading"
 				>
@@ -607,7 +609,9 @@ export default {
 				});
 				const formData = Object.fromEntries(newData);
 				console.log("Data: ", JSON.stringify(formData, null, 2));
-
+				errorPage.value = false;
+				currentStep.value++;
+				loading.value = false;
 				reset();
 			} else if (status == 2) {
 				loading.value = false;
@@ -621,9 +625,6 @@ export default {
 		}
 
 		function reset() {
-			errorPage.value = false;
-			currentStep.value++;
-			loading.value = false;
 			formValues.nama = undefined;
 			formValues.nik = undefined;
 			formValues.nkk = undefined;
@@ -645,6 +646,7 @@ export default {
 
 		function home() {
 			currentStep.value = 0;
+			reset();
 		}
 
 		function close() {
