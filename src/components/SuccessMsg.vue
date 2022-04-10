@@ -10,7 +10,7 @@
 			</div>
 			<img src="../assets/success.png" alt="success" class="w-24" />
 			<h1 class="text-xl text-gray-800">Berhasil dikirim</h1>
-			<button class="btn-send mb-3" @click="$emit('home')">Selesai</button>
+			<button class="btn btn-send mb-3" @click="$emit('home')">Selesai</button>
 		</div>
 	</div>
 </template>

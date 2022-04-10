@@ -18,7 +18,7 @@
 				v-slot="{ handleSubmit }"
 			>
 				<template v-if="currentStep === 0">
-					<div class="flex flex-col gap-4">
+					<div class="flex flex-col gap-6">
 						<div>
 							<label for="name" class="font-bold text-lowEmphasis">Nama</label>
 							<Field
@@ -90,7 +90,7 @@
 						<div>
 							<p class="font-bold text-lowEmphasis">Jenis Kelamin</p>
 							<div
-								class="grid grid-rows-1 grid-cols-2 border border-gray-400 mt-1 divide-x-2 rounded-md"
+								class="grid grid-rows-1 grid-cols-2 border-2 border-gray-400 mt-1 divide-x-2 divide-gray-400 rounded-md"
 							>
 								<div class="flex items-center p-2">
 									<Field
@@ -177,7 +177,7 @@
 				</template>
 
 				<template v-if="currentStep === 1">
-					<div class="grid gap-2 mb-4">
+					<div class="grid gap-4 mb-4">
 						<p class="font-bold text-lowEmphasis">Foto KTP</p>
 						<div class="flex">
 							<div
@@ -200,8 +200,11 @@
 								v-model="formValues.fotoktp"
 							/>
 						</div>
-						<div class="w-full p-2 border border-gray-400 relative rounded-md">
-							<span class="text-xs text-gray-400 absolute -top-6 right-1"
+						<div
+							class="w-full p-2 border-2 border-gray-400 relative rounded-md"
+						>
+							<span
+								class="text-sm font-bold text-gray-900 absolute -top-6 right-1"
 								>Ukuran Foto Maks 2 MB</span
 							>
 							<span class="text-sm">
@@ -213,11 +216,11 @@
 						<ErrorMessage name="fotoktp" class="text-red-500 text-sm" />
 					</div>
 
-					<div class="grid gap-2">
+					<div class="grid gap-2 mt-8">
 						<p class="font-bold text-lowEmphasis">Foto Kartu Keluarga</p>
 						<div class="flex">
 							<div
-								class="w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
+								class="w-32 mb-2 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
 							>
 								<label
 									for="fotokk"
@@ -237,10 +240,12 @@
 							/>
 						</div>
 						<div
-							class="w-full flex items-center p-2 border border-gray-400 relative rounded-md"
+							class="w-full p-2 border-2 border-gray-400 relative rounded-md"
 						>
 							<div class="text-gray-400 absolute -top-6 right-1">
-								<span class="text-xs">Ukuran Foto Maks 2 MB</span>
+								<span class="text-sm font-bold text-gray-900"
+									>Ukuran Foto Maks 2 MB</span
+								>
 							</div>
 							<span class="text-sm">
 								{{ fileKk.length > 0 ? fileKk : "Tidak ada file yang dipilih" }}
@@ -391,7 +396,7 @@
 				</template>
 
 				<button
-					class="btn-prev"
+					class="btn btn-prev"
 					v-if="currentStep !== 0 && currentStep < 3 && errorPage == false"
 					type="button"
 					@click="prevStep"
@@ -400,7 +405,7 @@
 				</button>
 
 				<button
-					class="btn-next"
+					class="btn btn-next"
 					v-if="currentStep !== 2 && currentStep < 3 && errorPage == false"
 					type="submit"
 				>
@@ -409,7 +414,7 @@
 
 				<button
 					v-if="currentStep === 2 && errorPage == false"
-					class="btn-send absolute"
+					class="btn btn-send absolute"
 					type="submit"
 					:disabled="loading"
 				>

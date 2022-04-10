@@ -15,7 +15,7 @@
 			<p class="text-sm">Cek koneksi anda, pastikan terhubung ke internet</p>
 		</div>
 		<div class="flex gap-4 mb-3">
-			<button class="btn-send" @click="$emit('send')" :disabled="loading">
+			<button class="btn btn-send" @click="$emit('send')" :disabled="loading">
 				<div
 					v-if="loading == true"
 					style="border-top-color: transparent"
@@ -23,7 +23,7 @@
 				></div>
 				<span v-if="loading == false">Coba lagi</span>
 			</button>
-			<button class="btn-prev" @click="$emit('closed')">Kembali</button>
+			<button class="btn btn-prev" @click="$emit('closed')">Kembali</button>
 		</div>
 	</div>
 </template>
