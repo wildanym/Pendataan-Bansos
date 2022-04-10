@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.stepper {
+		@apply rounded-full h-8 w-8 flex items-center justify-center;
+	}
+	.input-style {
+		@apply w-full rounded-md border-gray-400 outline-none focus:border-primaryGreen focus:ring-primaryGreen;
+	}
+	.input-file {
+		@apply form-input w-full  border-gray-400 outline-none focus:border-primaryGreen focus:ring-primaryGreen;
+	}
+	.wrapper-text {
+		@apply absolute -bottom-5 left-1;
+	}
+	.text-error {
+		@apply text-red-500 text-xs;
+	}
+	.btn-send {
+		@apply mt-6 w-32 h-10 bg-primaryGreen text-white px-4  py-2 rounded-md disabled:bg-gray-400 disabled:text-slate-600;
+	}
+	.btn-next {
+		@apply mt-6 w-32 bg-primaryBlue text-white px-4 py-2 rounded-md disabled:bg-gray-300 disabled:text-slate-600;
+	}
+	.btn-prev {
+		@apply mt-6 w-32 mr-4 bg-yellow-500 text-white px-4 py-2 rounded-md disabled:bg-gray-300 disabled:text-slate-600;
+	}
+	/* .btn-send {
+		@apply mt-6 w-32 bg-primaryGreen text-white px-4 py-2 rounded-md disabled:bg-gray-300 disabled:text-slate-600;
+	} */
+	.btn-error {
+		@apply mt-6 w-32 bg-Error text-white px-4 py-2 rounded-md disabled:bg-gray-300 disabled:text-slate-600;
+	}
+	.error-page {
+		@apply w-full h-screen absolute z-10 top-0 bg-white flex flex-col items-center justify-center p-6;
+	}
+}
