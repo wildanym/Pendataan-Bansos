@@ -1,12 +1,15 @@
 # Project 3 Pendataan Bansos (Frontend JS Project)
 
 ## Info
-```
-Nama        : Wildan Yuris Muhammad
-kelas       : VueJs
+
+Nama&emsp;&emsp;&emsp;: Wildan Yuris Muhammad
+
+kelas&emsp;&emsp;&emsp;&ensp;: VueJs
+
 Video Demo  : https://www.youtube.com/watch?v=OOsfVr_w4Hk
+
 Link Deploy : https://form-bansos.netlify.app
-```
+
 ## Penjelasan layout
 ```
     Saya membuat layout form menjadi multi step form dan dibagi menjadi 3 step, alasannya karena jumlah field inputan yang banyak 
