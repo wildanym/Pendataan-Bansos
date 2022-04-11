@@ -4,8 +4,8 @@
 ```
 Nama        : Wildan Yuris Muhammad
 kelas       : VueJs
-Video Demo  :
-Link Deploy :
+Video Demo  : https://www.youtube.com/watch?v=OOsfVr_w4Hk
+Link Deploy : https://form-bansos.netlify.app
 ```
 ## Penjelasan layout
 ```
