@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex justify-between items-center text-gray-600 border border-gray-200 shadow-md p-2 rounded-3xl"
+		class="flex justify-between items-center text-gray-600 bg-white border border-white border-t-gray-100 shadow-md p-2 rounded-3xl"
 	>
 		<div class="flex justify-between items-center w-full px-2 py-1">
 			<div v-if="page === 0" class="border-4 border-primaryYellow stepper">

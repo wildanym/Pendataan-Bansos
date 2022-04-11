@@ -7,7 +7,7 @@
 		@apply rounded-full h-8 w-8 flex items-center justify-center;
 	}
 	.input-style {
-		@apply w-full rounded-md border-2 placeholder-gray-400 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
+		@apply w-full rounded-md border placeholder-gray-400 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
 	}
 	.input-file {
 		@apply form-input w-full  border-gray-400 outline-none focus:border-primaryGreen focus:ring-primaryGreen;
@@ -19,7 +19,7 @@
 		@apply text-red-500 text-sm font-light;
 	}
 	.btn {
-		@apply mt-6 w-32 font-bold text-white px-4  py-3 rounded-md disabled:bg-gray-400 disabled:text-slate-600;
+		@apply mt-6 w-32 font-medium text-white px-4  py-3 rounded-md disabled:bg-gray-400 disabled:text-slate-600;
 	}
 	.btn-send {
 		@apply h-10 bg-primaryGreen;
@@ -28,12 +28,12 @@
 		@apply bg-primaryBlue;
 	}
 	.btn-prev {
-		@apply mr-4  bg-yellow-500;
+		@apply bg-yellow-500;
 	}
 	.btn-error {
 		@apply bg-Error;
 	}
 	.error-page {
-		@apply w-full h-screen absolute z-10 top-0 bg-white flex flex-col items-center justify-center p-6;
+		@apply w-full h-screen absolute z-10 top-0 bg-white flex flex-col items-center pt-28;
 	}
 }

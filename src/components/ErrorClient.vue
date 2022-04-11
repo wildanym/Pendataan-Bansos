@@ -1,15 +1,15 @@
 <template>
 	<div
-		class="bg-white border-2 relative overflow-hidden border-Error shadow-md shadow-gray-500 flex flex-col items-center justify-center rounded-lg"
+		class="bg-white border relative overflow-hidden border-Error shadow-md shadow-gray-500 flex flex-col items-center justify-center rounded-lg p-3"
 	>
 		<div class="w-full grid grid-rows-1 grid-cols-3 absolute top-0">
 			<div class="w-full bg-primaryBlue h-2"></div>
 			<div class="w-full bg-primaryGreen h-2"></div>
 			<div class="w-full bg-primaryYellow h-2"></div>
 		</div>
-		<div class="mt-3 px-3 flex flex-col items-center text-center">
+		<div class="mt-3 flex flex-col items-center text-center">
 			<img src="../assets/errorClient.png" alt="error" class="w-24" />
-			<h1 class="my-4 text-lg font-bold">
+			<h1 class="text-md font-bold">
 				Sepertinya koneksi internet anda terganggu
 			</h1>
 			<p class="text-sm">Cek koneksi anda, pastikan terhubung ke internet</p>
