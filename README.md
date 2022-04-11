@@ -1,6 +1,6 @@
 # Project 3 Pendataan Bansos (Frontend JS Project)
 
-## Info
+### Info
 
 Nama&emsp;&emsp;&emsp;: Wildan Yuris Muhammad
 
@@ -11,18 +11,21 @@ Video Demo  : https://www.youtube.com/watch?v=AJ9Mck91YZU
 Link Deploy : https://form-bansos.netlify.app
 
 ## Penjelasan layout
-```
-    Saya membuat layout form menjadi multi step form dan dibagi menjadi 3 step, alasannya karena aplikasi ini hanya dan akan 
-diakses melalui smartphone dan jumlah field inputan yang cukup banyak jadi jika dijadikan satu kolom akan terlalu panjang, 
-mengurangi kepraktisan penggunaan karena harus scroll terlebih dahulu jadi memperlambat kecepatan pengisian form.
+Saya membuat layout form menjadi multi step form dan dibagi menjadi 3 step, untuk step ke-1 dikhususkan untuk data diri, step ke-2 upload foto dan step ke-3 data yang berhubungan dengan dampak pandemi.
+desain tampilan form dibuat simple dan minimalis. karena berfokus pada fungsionalitas dan mudah dipahami jadi user bisa fokus pada field input yang harus diisi.
 
-    Untuk memastikan tidak ada kesalahan pengisian data di tiap step, user diwajibkan mengisi seluruh inputan pada tiap step dan 
+#### Alasan
+alasan pemilihan desain multi step form karena aplikasi ini hanya dan akan 
+diakses melalui smartphone dan jumlah field inputan yang cukup banyak jadi jika dijadikan satu kolom akan terlalu panjang, 
+mengurangi kepraktisan dan memperlambat kecepatan pengisian form karena akan terlalu banyak scroll.
+
+
+## Validasi
+Untuk memastikan tidak ada kesalahan pengisian data, maka di tiap-tiap step user diwajibkan mengisi seluruh inputan pada tiap step dan 
 harus sesuai dengan aturan validasi yang sudah ditetapkan, jika pengisian belum benar maka user tidak akan bisa melanjutkan ke step 
 berikutnya sebelum memperbaiki pengisian setiap inputan.
+    
 
-    Untuk inputan yang bentuknya pilihan, saya lebih memilih menggunakan radio button dari pada drop-down list. alasannya karena
-jumlah pilihannya sedikit dan lebih praktis user tidak terlalu banyak klik untuk memilih.
- ```
 
 
 ## Project setup
