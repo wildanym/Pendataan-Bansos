@@ -6,15 +6,15 @@ Nama&emsp;&emsp;&emsp;: Wildan Yuris Muhammad
 
 kelas&emsp;&emsp;&emsp;&ensp;: VueJs
 
-Video Demo  : https://www.youtube.com/watch?v=OOsfVr_w4Hk
+Video Demo  : https://www.youtube.com/watch?v=AJ9Mck91YZU
 
 Link Deploy : https://form-bansos.netlify.app
 
 ## Penjelasan layout
 ```
-    Saya membuat layout form menjadi multi step form dan dibagi menjadi 3 step, alasannya karena jumlah field inputan yang banyak 
-jadi jika dijadikan satu kolom akan terlalu panjang, mengurangi kepraktisan penggunaan karena harus scroll terlebih dahulu jadi 
-memperlambat kecepatan pengisian form.
+    Saya membuat layout form menjadi multi step form dan dibagi menjadi 3 step, alasannya karena aplikasi ini hanya dan akan 
+diakses melalui smartphone dan jumlah field inputan yang cukup banyak jadi jika dijadikan satu kolom akan terlalu panjang, 
+mengurangi kepraktisan penggunaan karena harus scroll terlebih dahulu jadi memperlambat kecepatan pengisian form.
 
     Untuk memastikan tidak ada kesalahan pengisian data di tiap step, user diwajibkan mengisi seluruh inputan pada tiap step dan 
 harus sesuai dengan aturan validasi yang sudah ditetapkan, jika pengisian belum benar maka user tidak akan bisa melanjutkan ke step 
