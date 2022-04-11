@@ -32,7 +32,7 @@
 								id="nama"
 								v-model="formValues.nama"
 							/>
-							<ErrorMessage name="nama" class="text-red-500 text-sm" />
+							<ErrorMessage name="nama" class="text-error" />
 						</div>
 						<div>
 							<div class="relative">
@@ -56,7 +56,7 @@
 									}}/16</span
 								>
 							</div>
-							<ErrorMessage name="nik" class="text-red-500 text-sm" />
+							<ErrorMessage name="nik" class="text-error" />
 						</div>
 						<div>
 							<div class="relative">
@@ -80,7 +80,7 @@
 									}}/16</span
 								>
 							</div>
-							<ErrorMessage name="nkk" class="text-red-500 text-sm" />
+							<ErrorMessage name="nkk" class="text-error" />
 						</div>
 						<div>
 							<label for="umur" class="font-medium text-lowEmphasis"
@@ -95,7 +95,7 @@
 								autocomplete="off"
 								v-model="formValues.umur"
 							/>
-							<ErrorMessage name="umur" class="text-red-500 text-sm" />
+							<ErrorMessage name="umur" class="text-error" />
 						</div>
 						<div>
 							<p class="font-medium text-lowEmphasis">Jenis Kelamin</p>
@@ -125,7 +125,7 @@
 									<label class="ml-3 w-full" for="perempuan">Perempuan</label>
 								</div>
 							</div>
-							<ErrorMessage name="jk" class="text-red-500 text-sm" />
+							<ErrorMessage name="jk" class="text-error" />
 						</div>
 						<div>
 							<div class="relative">
@@ -150,7 +150,7 @@
 									}}/255</span
 								>
 							</div>
-							<ErrorMessage name="alamat" class="text-red-500 text-sm" />
+							<ErrorMessage name="alamat" class="text-error" />
 						</div>
 						<div class="grid grid-rows-1 grid-cols-2 mt-4 rounded-md">
 							<div>
@@ -167,7 +167,7 @@
 										v-model="formValues.rt"
 									/>
 								</div>
-								<ErrorMessage name="rt" class="text-red-500 text-sm" />
+								<ErrorMessage name="rt" class="text-error" />
 							</div>
 							<div>
 								<div class="flex items-center pr-2">
@@ -183,7 +183,7 @@
 										v-model="formValues.rw"
 									/>
 								</div>
-								<ErrorMessage name="rw" class="text-red-500 text-sm" />
+								<ErrorMessage name="rw" class="text-error" />
 							</div>
 						</div>
 					</div>
@@ -226,7 +226,7 @@
 								}}</span
 							>
 						</div>
-						<ErrorMessage name="fotoktp" class="text-red-500 text-sm" />
+						<ErrorMessage name="fotoktp" class="text-error" />
 					</div>
 
 					<div class="grid gap-2 mt-8">
@@ -264,7 +264,7 @@
 								{{ fileKk.length > 0 ? fileKk : "Tidak ada file yang dipilih" }}
 							</span>
 						</div>
-						<ErrorMessage name="fotokk" class="text-red-500 text-sm" />
+						<ErrorMessage name="fotokk" class="text-error" />
 					</div>
 				</template>
 
@@ -282,7 +282,7 @@
 							autocomplete="off"
 							v-model="formValues.pSebelum"
 						/>
-						<ErrorMessage name="pSebelum" class="text-red-500 text-sm" />
+						<ErrorMessage name="pSebelum" class="text-error" />
 					</div>
 					<div>
 						<label for="psebelum" class="font-medium text-lowEmphasis"
@@ -297,7 +297,7 @@
 							autocomplete="off"
 							v-model="formValues.pSesudah"
 						/>
-						<ErrorMessage name="pSesudah" class="text-red-500 text-sm" />
+						<ErrorMessage name="pSesudah" class="text-error" />
 					</div>
 					<!-- alasan -->
 					<div class="grid gap-2 mt-4">
@@ -381,8 +381,8 @@
 								/>
 							</label>
 						</div>
-						<ErrorMessage name="alasan" class="text-red-500 text-sm" />
-						<ErrorMessage name="alasanlainnya" class="text-red-500 text-sm" />
+						<ErrorMessage name="alasan" class="text-error" />
+						<ErrorMessage name="alasanlainnya" class="text-error" />
 						<div class="relative">
 							<Field
 								name="terms"
@@ -404,7 +404,7 @@
 									data tersebut</label
 								>
 							</div>
-							<ErrorMessage name="terms" class="text-red-500 text-sm" />
+							<ErrorMessage name="terms" class="text-error" />
 						</div>
 					</div>
 				</template>
