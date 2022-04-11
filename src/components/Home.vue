@@ -8,7 +8,7 @@
 				:loading="loading"
 			></component>
 		</div>
-		<div v-if="errorPage == false" class="w-full p-5">
+		<div v-if="errorPage == false" class="w-full px-5 pt-5 pb-2">
 			<stepperBar :page="currentStep"></stepperBar>
 		</div>
 		<div class="p-3 relative">
@@ -20,7 +20,9 @@
 				<template v-if="currentStep === 0">
 					<div class="flex flex-col gap-6">
 						<div>
-							<label for="name" class="font-bold text-lowEmphasis">Nama</label>
+							<label for="name" class="font-medium text-lowEmphasis"
+								>Nama</label
+							>
 							<Field
 								type="text"
 								class="input-style"
@@ -34,7 +36,9 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="nik" class="font-bold text-lowEmphasis">NIK</label>
+								<label for="nik" class="font-medium text-lowEmphasis"
+									>NIK</label
+								>
 								<Field
 									class="input-style"
 									name="nik"
@@ -56,7 +60,7 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="nik" class="font-bold text-lowEmphasis"
+								<label for="nik" class="font-medium text-lowEmphasis"
 									>No Kartu Keluarga</label
 								>
 								<Field
@@ -79,7 +83,9 @@
 							<ErrorMessage name="nkk" class="text-red-500 text-sm" />
 						</div>
 						<div>
-							<label for="umur" class="font-bold text-lowEmphasis">Umur</label>
+							<label for="umur" class="font-medium text-lowEmphasis"
+								>Umur</label
+							>
 							<Field
 								type="number"
 								class="input-style"
@@ -92,7 +98,7 @@
 							<ErrorMessage name="umur" class="text-red-500 text-sm" />
 						</div>
 						<div>
-							<p class="font-bold text-lowEmphasis">Jenis Kelamin</p>
+							<p class="font-medium text-lowEmphasis">Jenis Kelamin</p>
 							<div
 								class="grid grid-rows-1 grid-cols-2 border-2 border-gray-400 mt-1 divide-x-2 divide-gray-400 rounded-md"
 							>
@@ -123,7 +129,7 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="alamat" class="font-bold text-lowEmphasis"
+								<label for="alamat" class="font-medium text-lowEmphasis"
 									>Alamat</label
 								>
 								<Field
@@ -149,7 +155,7 @@
 						<div class="grid grid-rows-1 grid-cols-2 mt-4 rounded-md">
 							<div>
 								<div class="flex items-center pr-2">
-									<label for="rt" class="pr-2 font-bold text-lowEmphasis"
+									<label for="rt" class="pr-2 font-medium text-lowEmphasis"
 										>RT
 									</label>
 									<Field
@@ -165,7 +171,7 @@
 							</div>
 							<div>
 								<div class="flex items-center pr-2">
-									<label for="rw" class="pr-2 font-bold text-lowEmphasis"
+									<label for="rw" class="pr-2 font-medium text-lowEmphasis"
 										>RW
 									</label>
 									<Field
@@ -185,7 +191,7 @@
 
 				<template v-if="currentStep === 1">
 					<div class="grid gap-4 mb-4">
-						<p class="font-bold text-lowEmphasis">Foto KTP</p>
+						<p class="font-medium text-lowEmphasis">Foto KTP</p>
 						<div class="flex">
 							<div
 								class="w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
@@ -211,7 +217,7 @@
 							class="w-full p-2 border-2 border-gray-400 relative rounded-md"
 						>
 							<span
-								class="text-sm font-bold text-gray-900 absolute -top-6 right-1"
+								class="text-sm font-medium text-gray-900 absolute -top-6 right-1"
 								>Ukuran Foto Maks 2 MB</span
 							>
 							<span class="text-sm">
@@ -224,7 +230,7 @@
 					</div>
 
 					<div class="grid gap-2 mt-8">
-						<p class="font-bold text-lowEmphasis">Foto Kartu Keluarga</p>
+						<p class="font-medium text-lowEmphasis">Foto Kartu Keluarga</p>
 						<div class="flex">
 							<div
 								class="w-32 mb-2 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
@@ -250,7 +256,7 @@
 							class="w-full p-2 border-2 border-gray-400 relative rounded-md"
 						>
 							<div class="text-gray-400 absolute -top-6 right-1">
-								<span class="text-sm font-bold text-gray-900"
+								<span class="text-sm font-medium text-gray-900"
 									>Ukuran Foto Maks 2 MB</span
 								>
 							</div>
@@ -264,7 +270,7 @@
 
 				<template v-if="currentStep === 2">
 					<div class="mb-6">
-						<label for="psebelum" class="font-bold text-lowEmphasis"
+						<label for="psebelum" class="font-medium text-lowEmphasis"
 							>Penghasilan sebelum pandemi</label
 						>
 						<Field
@@ -279,7 +285,7 @@
 						<ErrorMessage name="pSebelum" class="text-red-500 text-sm" />
 					</div>
 					<div>
-						<label for="psebelum" class="font-bold text-lowEmphasis"
+						<label for="psebelum" class="font-medium text-lowEmphasis"
 							>Penghasilan sesudah pandemi</label
 						>
 						<Field
@@ -295,7 +301,9 @@
 					</div>
 					<!-- alasan -->
 					<div class="grid gap-2 mt-4">
-						<p class="font-bold text-lowEmphasis">Alasan membutuhkan bantuan</p>
+						<p class="font-medium text-lowEmphasis">
+							Alasan membutuhkan bantuan
+						</p>
 						<div class="flex items-start gap-2">
 							<div>
 								<Field
@@ -389,7 +397,7 @@
 							>
 								<label
 									for="terms"
-									class="text-sm font-bold text-lowEmphasis ml-7"
+									class="text-sm font-medium text-lowEmphasis ml-7"
 								>
 									Saya menyatakan bahwa data yang diisikan adalah benar dan siap
 									mempertanggungjawabkan apabila ditemukan ketidaksesuaian dalam

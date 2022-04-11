@@ -1,8 +1,15 @@
 <template>
 	<nav
-		class="h-14 w-full bg-lowEmphasis shadow-md shadow-gray-500 flex items-center px-4 font-bold text-white relative font-roboto z-20"
+		class="h-14 w-full bg-white shadow-md shadow-gray-400 flex items-center justify-center px-4 font-bold relative font-roboto z-20"
 	>
-		<h1 class="text-xl">Pendataan Bansos</h1>
+		<div class="flex w-full max-w-xl justify-between">
+			<div>
+				<img src="./assets/logo.png" alt="logo jds" class="w-20" />
+			</div>
+			<div>
+				<h1 class="text-xl font-bold text-lowEmphasis">Pendataan Bansos</h1>
+			</div>
+		</div>
 	</nav>
 	<main class="h-screen font-roboto">
 		<div class="mx-auto max-w-xl">
