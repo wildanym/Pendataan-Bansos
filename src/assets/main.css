@@ -7,7 +7,7 @@
 		@apply rounded-full h-8 w-8 flex items-center justify-center;
 	}
 	.input-style {
-		@apply w-full rounded-md border-2 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
+		@apply w-full rounded-md border-2 placeholder-gray-400 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
 	}
 	.input-file {
 		@apply form-input w-full  border-gray-400 outline-none focus:border-primaryGreen focus:ring-primaryGreen;
