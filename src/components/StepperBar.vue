@@ -7,7 +7,7 @@
 				<span>1</span>
 			</div>
 			<div v-if="page > 0" class="border-4 border-primaryGreen h-8 w-8 stepper">
-				<span>✔</span>
+				<img src="../assets/ok.png" alt="ok" class="h-5 w-5" />
 			</div>
 
 			<div class="w-24 h-[.12rem] bg-primaryBlue"></div>
@@ -22,7 +22,7 @@
 				<span>2</span>
 			</div>
 			<div v-if="page > 1" class="border-4 border-primaryGreen h-8 w-8 stepper">
-				<span>✔</span>
+				<img src="../assets/ok.png" alt="ok" class="h-5 w-5" />
 			</div>
 
 			<div class="w-24 h-[.12rem] bg-primaryBlue"></div>
@@ -37,7 +37,7 @@
 				<span>3</span>
 			</div>
 			<div v-if="page > 2" class="border-4 border-primaryGreen h-8 w-8 stepper">
-				<span>✔</span>
+				<img src="../assets/ok.png" alt="ok" class="h-5 w-5" />
 			</div>
 		</div>
 	</div>

@@ -177,10 +177,10 @@
 				</template>
 				<!-- step ke-2 -->
 				<template v-if="currentStep === 1">
-					<div class="grid gap-4 mb-4">
+					<div class="grid gap-2 my-3">
 						<p class="label-style">Foto KTP</p>
 						<div class="flex">
-							<div class="btn-upload">
+							<div class="btn-upload mb-2">
 								<label
 									for="fotoktp"
 									class="bg-primaryGreen text-white cursor-pointer ml-1"
@@ -266,7 +266,7 @@
 						<ErrorMessage name="pSebelum" class="text-error" />
 					</div>
 					<div>
-						<label for="psebelum" class="label-style"
+						<label for="psesudah" class="label-style"
 							>Penghasilan sesudah pandemi</label
 						>
 						<Field
@@ -367,14 +367,14 @@
 								name="terms"
 								type="checkbox"
 								id="terms"
-								class="text-primaryGreen mr-2 absolute peer top-7 left-3"
+								class="text-primaryGreen mr-2 cursor-pointer absolute peer top-7 left-3"
 								value="true"
 								v-model="formValues.terms"
 							/>
 							<div class="terms-box">
 								<label
 									for="terms"
-									class="text-sm cursor-pointer label-style ml-7"
+									class="cursor-pointer label-style ml-7 text-[.92rem]"
 								>
 									Saya menyatakan bahwa data yang diisikan adalah benar dan siap
 									mempertanggungjawabkan apabila ditemukan ketidaksesuaian dalam
