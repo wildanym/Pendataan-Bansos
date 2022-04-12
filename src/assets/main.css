@@ -10,7 +10,7 @@
 		@apply rounded-full h-8 w-8 flex items-center justify-center;
 	}
 	.input-style {
-		@apply w-full rounded-md border placeholder-gray-400 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
+		@apply w-full rounded-lg border placeholder-gray-400 border-gray-400 outline-none  focus:border-primaryGreen focus:ring-primaryGreen;
 	}
 	.input-file {
 		@apply form-input w-full  border-gray-400 outline-none focus:border-primaryGreen focus:ring-primaryGreen;
@@ -22,7 +22,7 @@
 		@apply text-red-500 text-sm font-light;
 	}
 	.btn {
-		@apply mt-6 w-32 font-medium text-white px-4  py-3 rounded-md disabled:bg-gray-400 disabled:text-slate-600;
+		@apply mt-6 w-32 font-medium text-white px-4  py-3 rounded-lg disabled:bg-gray-400 disabled:text-slate-600;
 	}
 	.btn-send {
 		@apply h-10 bg-primaryGreen;
@@ -37,7 +37,7 @@
 		@apply bg-Error;
 	}
 	.btn-upload {
-		@apply w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden;
+		@apply w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-lg overflow-hidden;
 	}
 	.error-page {
 		@apply w-full h-screen absolute z-10 top-0 bg-white flex flex-col items-center pt-28;
@@ -49,7 +49,7 @@
 		@apply font-normal text-lowEmphasis;
 	}
 	.terms-box {
-		@apply cursor-pointer border-2 border-red-500 bg-red-100 mt-4 p-2 rounded-md peer-checked:border-primaryGreen peer-checked:bg-green-100;
+		@apply cursor-pointer border-2 border-red-500 bg-red-100 mt-4 p-2 rounded-lg peer-checked:border-primaryGreen peer-checked:bg-green-100;
 	}
 	.loading-animate {
 		@apply w-6 h-6 mx-auto border-4 border-white border-solid rounded-full animate-spin;

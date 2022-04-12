@@ -93,7 +93,7 @@
 						<div>
 							<p class="label-style">Jenis Kelamin</p>
 							<div
-								class="grid grid-rows-1 grid-cols-2 border bg-white border-gray-400 mt-1 divide-x divide-gray-400 rounded-md"
+								class="grid grid-rows-1 grid-cols-2 border bg-white border-gray-400 mt-1 divide-x divide-gray-400 rounded-lg"
 							>
 								<div class="flex items-center p-2">
 									<Field
@@ -198,7 +198,7 @@
 							/>
 						</div>
 						<div
-							class="w-full p-2 border bg-white border-gray-400 relative rounded-md"
+							class="w-full p-2 border bg-white border-gray-400 relative rounded-lg"
 						>
 							<span
 								class="text-sm font-normal text-gray-900 absolute -top-6 right-1"
@@ -234,7 +234,7 @@
 							/>
 						</div>
 						<div
-							class="w-full p-2 border bg-white border-gray-400 relative rounded-md"
+							class="w-full p-2 border bg-white border-gray-400 relative rounded-lg"
 						>
 							<div class="text-gray-400 absolute -top-6 right-1">
 								<span class="text-sm font-normal text-gray-900"
