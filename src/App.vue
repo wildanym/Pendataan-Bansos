@@ -1,7 +1,5 @@
 <template>
-	<nav
-		class="h-14 w-full bg-white shadow-md shadow-gray-400 flex items-center justify-center px-4 font-bold relative font-roboto z-20"
-	>
+	<nav class="navbar">
 		<div class="flex w-full max-w-xl justify-between">
 			<div class="flex items-center">
 				<img src="./assets/logo.png" alt="logo jds" class="w-20" />

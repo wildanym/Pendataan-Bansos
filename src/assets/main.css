@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+	.navbar {
+		@apply h-14 w-full bg-white shadow-md shadow-gray-400 flex items-center justify-center px-4 font-bold relative font-roboto z-20;
+	}
 	.stepper {
 		@apply rounded-full h-8 w-8 flex items-center justify-center;
 	}
@@ -33,7 +36,22 @@
 	.btn-error {
 		@apply bg-Error;
 	}
+	.btn-upload {
+		@apply w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden;
+	}
 	.error-page {
 		@apply w-full h-screen absolute z-10 top-0 bg-white flex flex-col items-center pt-28;
+	}
+	.error-page-content {
+		@apply bg-white border relative overflow-hidden border-Error shadow-md shadow-gray-500 flex flex-col items-center justify-center rounded-lg p-3;
+	}
+	.label-style {
+		@apply font-normal text-lowEmphasis;
+	}
+	.terms-box {
+		@apply cursor-pointer border-2 border-red-500 bg-red-100 mt-4 p-2 rounded-md peer-checked:border-primaryGreen peer-checked:bg-green-100;
+	}
+	.loading-animate {
+		@apply w-6 h-6 mx-auto border-4 border-white border-solid rounded-full animate-spin;
 	}
 }

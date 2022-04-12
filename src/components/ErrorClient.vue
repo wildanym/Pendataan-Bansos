@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="bg-white border relative overflow-hidden border-Error shadow-md shadow-gray-500 flex flex-col items-center justify-center rounded-lg p-3"
-	>
+	<div class="error-page-content">
 		<div class="w-full grid grid-rows-1 grid-cols-3 absolute top-0">
 			<div class="w-full bg-primaryBlue h-2"></div>
 			<div class="w-full bg-primaryGreen h-2"></div>
@@ -23,7 +21,7 @@
 				<div
 					v-if="loading == true"
 					style="border-top-color: transparent"
-					class="w-6 h-6 mx-auto border-4 border-white border-solid rounded-full animate-spin"
+					class="loading-animate"
 				></div>
 				<span v-if="loading == false">Coba lagi</span>
 			</button>

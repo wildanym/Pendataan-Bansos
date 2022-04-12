@@ -3,9 +3,9 @@
 		<div v-if="errorPage == true" class="error-page">
 			<component
 				:is="errorType"
+				:loading="loading"
 				@closed="close"
 				@send="nextStep"
-				:loading="loading"
 			></component>
 		</div>
 		<div v-if="errorPage == false" class="w-full px-5 pt-5 pb-2">
@@ -17,12 +17,11 @@
 				:validation-schema="currentSchema"
 				v-slot="{ handleSubmit }"
 			>
+				<!-- step ke-1 -->
 				<template v-if="currentStep === 0">
 					<div class="flex flex-col gap-4">
 						<div>
-							<label for="name" class="font-normal text-lowEmphasis"
-								>Nama</label
-							>
+							<label for="name" class="label-style">Nama</label>
 							<Field
 								type="text"
 								class="input-style"
@@ -36,9 +35,7 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="nik" class="font-normal text-lowEmphasis"
-									>NIK</label
-								>
+								<label for="nik" class="label-style">NIK</label>
 								<Field
 									class="input-style"
 									name="nik"
@@ -60,9 +57,7 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="nik" class="font-normal text-lowEmphasis"
-									>No Kartu Keluarga</label
-								>
+								<label for="nik" class="label-style">No Kartu Keluarga</label>
 								<Field
 									class="input-style"
 									name="nkk"
@@ -83,9 +78,7 @@
 							<ErrorMessage name="nkk" class="text-error" />
 						</div>
 						<div>
-							<label for="umur" class="font-normal text-lowEmphasis"
-								>Umur</label
-							>
+							<label for="umur" class="label-style">Umur</label>
 							<Field
 								type="number"
 								class="input-style"
@@ -98,7 +91,7 @@
 							<ErrorMessage name="umur" class="text-error" />
 						</div>
 						<div>
-							<p class="font-normal text-lowEmphasis">Jenis Kelamin</p>
+							<p class="label-style">Jenis Kelamin</p>
 							<div
 								class="grid grid-rows-1 grid-cols-2 border bg-white border-gray-400 mt-1 divide-x divide-gray-400 rounded-md"
 							>
@@ -129,9 +122,7 @@
 						</div>
 						<div>
 							<div class="relative">
-								<label for="alamat" class="font-normal text-lowEmphasis"
-									>Alamat</label
-								>
+								<label for="alamat" class="label-style">Alamat</label>
 								<Field
 									type="text"
 									class="input-style relative"
@@ -155,9 +146,7 @@
 						<div class="grid grid-rows-1 grid-cols-2 mt-4 rounded-md">
 							<div>
 								<div class="flex items-center pr-2">
-									<label for="rt" class="pr-2 font-normal text-lowEmphasis"
-										>RT
-									</label>
+									<label for="rt" class="pr-2 label-style">RT </label>
 									<Field
 										type="number"
 										class="input-style"
@@ -171,9 +160,7 @@
 							</div>
 							<div>
 								<div class="flex items-center pr-2">
-									<label for="rw" class="pr-2 font-normal text-lowEmphasis"
-										>RW
-									</label>
+									<label for="rw" class="pr-2 label-style">RW </label>
 									<Field
 										type="number"
 										class="input-style"
@@ -188,14 +175,12 @@
 						</div>
 					</div>
 				</template>
-
+				<!-- step ke-2 -->
 				<template v-if="currentStep === 1">
 					<div class="grid gap-4 mb-4">
-						<p class="font-normal text-lowEmphasis">Foto KTP</p>
+						<p class="label-style">Foto KTP</p>
 						<div class="flex">
-							<div
-								class="w-32 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
-							>
+							<div class="btn-upload">
 								<label
 									for="fotoktp"
 									class="bg-primaryGreen text-white cursor-pointer ml-1"
@@ -229,11 +214,9 @@
 					</div>
 
 					<div class="grid gap-2 mt-8">
-						<p class="font-normal text-lowEmphasis">Foto Kartu Keluarga</p>
+						<p class="label-style">Foto Kartu Keluarga</p>
 						<div class="flex">
-							<div
-								class="w-32 mb-2 h-10 flex items-center justify-around bg-primaryGreen rounded-md overflow-hidden"
-							>
+							<div class="mb-2 btn-upload">
 								<label
 									for="fotokk"
 									class="bg-primaryGreen text-white cursor-pointer ml-1"
@@ -265,10 +248,10 @@
 						<ErrorMessage name="fotokk" class="text-error" />
 					</div>
 				</template>
-
+				<!-- step ke-3 -->
 				<template v-if="currentStep === 2">
 					<div class="mb-6">
-						<label for="psebelum" class="font-normal text-lowEmphasis"
+						<label for="psebelum" class="label-style"
 							>Penghasilan sebelum pandemi</label
 						>
 						<Field
@@ -283,7 +266,7 @@
 						<ErrorMessage name="pSebelum" class="text-error" />
 					</div>
 					<div>
-						<label for="psebelum" class="font-normal text-lowEmphasis"
+						<label for="psebelum" class="label-style"
 							>Penghasilan sesudah pandemi</label
 						>
 						<Field
@@ -299,9 +282,7 @@
 					</div>
 					<!-- alasan -->
 					<div class="grid gap-2 mt-4">
-						<p class="font-normal text-lowEmphasis">
-							Alasan membutuhkan bantuan
-						</p>
+						<p class="label-style">Alasan membutuhkan bantuan</p>
 						<div class="flex items-start gap-2">
 							<div>
 								<Field
@@ -381,7 +362,7 @@
 						</div>
 						<ErrorMessage name="alasan" class="text-error" />
 						<ErrorMessage name="alasanlainnya" class="text-error" />
-						<div class="relative">
+						<div class="relative cursor-pointer">
 							<Field
 								name="terms"
 								type="checkbox"
@@ -390,12 +371,10 @@
 								value="true"
 								v-model="formValues.terms"
 							/>
-							<div
-								class="border-2 border-red-500 bg-red-100 mt-4 p-2 rounded-md peer-checked:border-primaryGreen peer-checked:bg-green-100"
-							>
+							<div class="terms-box">
 								<label
 									for="terms"
-									class="text-sm font-normal text-lowEmphasis ml-7"
+									class="text-sm cursor-pointer label-style ml-7"
 								>
 									Saya menyatakan bahwa data yang diisikan adalah benar dan siap
 									mempertanggungjawabkan apabila ditemukan ketidaksesuaian dalam
@@ -406,11 +385,11 @@
 						</div>
 					</div>
 				</template>
-
+				<!-- success page -->
 				<template v-if="currentStep === 3">
 					<SuccessMsg @home="home" />
 				</template>
-
+				<!-- button sebelumnya -->
 				<button
 					class="btn btn-prev mr-4"
 					v-if="currentStep !== 0 && currentStep < 3 && errorPage == false"
@@ -419,7 +398,7 @@
 				>
 					Sebelumnya
 				</button>
-
+				<!-- button selanjutnya -->
 				<button
 					class="btn btn-next"
 					v-if="currentStep !== 2 && currentStep < 3 && errorPage == false"
@@ -427,7 +406,7 @@
 				>
 					Selanjutnya
 				</button>
-
+				<!-- button kirim -->
 				<button
 					v-if="currentStep === 2 && errorPage == false"
 					class="btn btn-send absolute h-12 pb-4"
@@ -437,7 +416,7 @@
 					<div
 						v-if="loading == true"
 						style="border-top-color: transparent"
-						class="w-6 h-6 mx-auto border-4 border-white border-solid rounded-full animate-spin"
+						class="loading-animate"
 					></div>
 					<span v-if="loading == false">Kirim</span>
 				</button>
@@ -453,7 +432,7 @@ import ErrorServer from "./ErrorServer.vue";
 import ErrorClient from "./ErrorClient.vue";
 import { Form, Field, ErrorMessage, resetForm } from "vee-validate";
 import * as yup from "yup";
-import { ref, reactive, computed, getCurrentInstance, onMounted } from "vue";
+import { ref, reactive, computed } from "vue";
 import { number } from "yup/lib/locale";
 
 export default {
