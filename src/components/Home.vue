@@ -478,6 +478,11 @@ export default {
 					.required("Harap isi data ini"),
 				nkk: yup
 					.number()
+					.test("nkk", "No Kartu Keluarga harus 16 digit", () => {
+						if (formValues.nkk != undefined) {
+							return formValues.nkk.length == 16;
+						}
+					})
 					.transform((value) => (isNaN(value) ? undefined : value))
 					.required("Harap isi data ini"),
 				umur: yup
