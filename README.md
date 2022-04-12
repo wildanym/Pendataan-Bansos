@@ -25,7 +25,9 @@ desain layout ini juga lebih difokuskan pada fungsionalitas dan mudah dipahami, 
 Untuk memastikan tidak ada kesalahan pengisian data, maka di tiap-tiap step user diwajibkan mengisi seluruh inputan pada tiap step dan 
 harus sesuai dengan aturan validasi yang sudah ditetapkan, jika pengisian belum benar maka user tidak akan bisa melanjutkan ke step 
 berikutnya sebelum memperbaiki pengisian setiap inputan.
-    
+
+## Error Handling
+Sudah dilengkapi Error Handling saat proses pengiriman data baik itu dari sisi client dan sisi server, dimana jika terjadi error saat proses pengiriman data maka akan tampil halaman sesuai tipe error nya.
 
 
 
