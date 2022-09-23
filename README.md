@@ -6,8 +6,6 @@ Nama&emsp;&emsp;&emsp;: Wildan Yuris Muhammad
 
 kelas&emsp;&emsp;&emsp;&ensp;: VueJs
 
-Video Demo  : https://www.youtube.com/watch?v=AJ9Mck91YZU
-
 Link Deploy : https://form-bansos.netlify.app
 
 
